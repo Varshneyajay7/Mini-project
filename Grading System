@@ -1,19 +1,16 @@
-age=int(input('enter your age'))
-if age>=18 :
-    print('press 1 to vote BJP')
-    print('press 2 to vote Congress')
-    print('press 3 to vote AAP')
-    print('press 3 to vote NOTA')
-    ch=int(input('enter your vote'))
-    if ch==1:
-        print('you voted for BJP')
-    elif ch==2:
-        print('you voted for Congress')
-    elif ch==3:
-        print('you voted for  AAP')
-    elif ch==4:
-        print('you voted for NOTA')
-    else:
-        print('INVALID CHOICE')
-else:
-    print('You are not eligible to vote')
+name=input('enter student name')
+eng=float(input('enter marks of english'))
+maths=float(input('enter marks of maths'))
+physics=float(input('enter marks of physics'))
+python=float(input('enter marks of python'))
+chemistry=float(input('enter marks of Chemistry'))
+marks=((eng+python+maths+chemistry+physics)/500)*100
+print(marks)
+if marks>=90 and marks<=100:
+    print(name,'has got A grade')
+elif marks>=70 and marks<=89:
+    print(name,'has got B grade')
+elif marks>=40 and marks<=69:
+    print(name,'has got C grade ')
+elif marks<40:
+    print(name,'has got F grade')
