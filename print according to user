@@ -1,1 +1,41 @@
-
+ ch=input('Press F for forward printing or Press B for backward printing
+ if ch=='F':
+ st=int(input('Enter starting point : '))
+ end=int(input('Enter ending point : '))
+ upd=int(input('Enter updation : '))
+ ch1=input('Press R for row printing or Press C for column printing:
+ if ch1=='R':
+ if st<=end:
+ for i in range(st,end+1,upd):
+ print(i,end=' ')
+ else:
+ print('Invalid starting and ending point.')
+ elif ch1=='C':
+ if st<=end:
+ for i in range(st,end+1,upd):
+ print(i)
+ else:
+ print('Invalid starting and ending point.')
+ else:
+ print('Invalid choice.')
+ elif ch=='B':
+ st=int(input('Enter starting point : '))
+ end=int(input('Enter ending point : '))
+ upd=int(input('Enter updation : '))
+ ch2=input('Press R for row printing or Press C for column printing:
+ if ch2=='R':
+ if st>=end:
+ for i in range(st,end-1,-upd):
+ print(i,end=' ')
+ else:
+ print('Invalid input(s).')
+ elif ch2=='C':
+ if st>=end:
+ for i in range(st,end-1,-upd):
+ print(i)
+ else:
+ print('Invalid input(s).')
+ else:
+ print('Invalid choice')
+ else:
+ print('Enter either F or B.Thank you.')
