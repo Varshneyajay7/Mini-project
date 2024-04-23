@@ -1,1 +1,18 @@
-
+menu={'lays':20,'coke':40,'pastry':60,'apple':320,'mangoes':120,'kurkure':20,'nachos':20,'coffee':40}
+print(menu)
+money=int(input('enter how much money you have to spend:'))
+inventory={} 
+sum=0
+n=int(input('enter no. of items in inventory:'))
+for i in range(n):
+    a=input('enter item name:')
+    b=int(input('enter no. of items to buy:'))
+    if money>=b*menu[a]:
+        sum+=b*menu[a]
+        inventory.update({a:(b*menu[a])})
+    else:
+        print('insufficient balance')
+        break
+c=money-sum
+print('amount remaining:',c)
+print(inventory)
