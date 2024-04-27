@@ -1,0 +1,31 @@
+sp=int(input('enter starting point '))
+ep=int(input('enter ending point'))
+print('to print in forward order press 1 ')
+print('to print in reverse order press 2')
+ch=int(input('enter your choice'))
+if ch==1:
+    print('to print vertically press 3')
+    print('to print horizontally press 4')
+    a=int(input('enter your choice'))
+    if a==3:
+        for i in range(sp,ep+1,1):
+            print(i)
+    elif a==4:
+        for i in range(sp,ep+1,1):
+            print(i,end=' ')
+    else:
+        print('INVALID CHOICE')
+elif ch==2:
+    print('to print vertically press 5')
+    print('to print horizontally press 6')
+    b=int(input('enter your choice'))
+    if b==5:
+        for i in range(ep,sp+1,1):
+            print(i)
+    elif b==6:
+        for i in range(ep,sp+1,1):
+            print(i,end=' ')
+    else:
+        print('INVALID CHOICE')
+else:
+    print('INVALID CHOICE')
