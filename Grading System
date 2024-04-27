@@ -4,7 +4,7 @@ maths=float(input('enter marks of maths'))
 physics=float(input('enter marks of physics'))
 python=float(input('enter marks of python'))
 chemistry=float(input('enter marks of Chemistry'))
-marks=((eng+python+maths+chemistry+physics)/500)*100
+marks=(((eng+python+maths+chemistry+physics)/500)*100)
 print(marks)
 if marks>=90 and marks<=100:
     print(name,'has got A grade')
