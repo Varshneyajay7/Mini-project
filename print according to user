@@ -1,41 +1,36 @@
- ch=input('Press F for forward printing or Press B for backward printing
- if ch=='F':
- st=int(input('Enter starting point : '))
- end=int(input('Enter ending point : '))
- upd=int(input('Enter updation : '))
- ch1=input('Press R for row printing or Press C for column printing:
- if ch1=='R':
- if st<=end:
- for i in range(st,end+1,upd):
+ch=input('Press F for
+forward prin ng or Press B for backward prin ng : ') if ch=='F':
+ st=int(input('Enter star ng point : ')) end=int(input('Enter ending
+point : ')) upd=int(input('Enter upda on : ')) ch1=input('Press R
+for row prin ng or Press C for column prin ng:')
+ if ch1=='R': if st<=end:
+for i in range(st,end+1,upd):
  print(i,end=' ')
- else:
- print('Invalid starting and ending point.')
- elif ch1=='C':
- if st<=end:
- for i in range(st,end+1,upd):
+else:
+ print('Invalid star ng and ending point.')
+elif ch1=='C': if st<=end: for i in
+range(st,end+1,upd):
  print(i)
- else:
- print('Invalid starting and ending point.')
- else:
+else:
+ print('Invalid star ng and ending point.')
+else:
  print('Invalid choice.')
- elif ch=='B':
- st=int(input('Enter starting point : '))
- end=int(input('Enter ending point : '))
- upd=int(input('Enter updation : '))
- ch2=input('Press R for row printing or Press C for column printing:
- if ch2=='R':
- if st>=end:
- for i in range(st,end-1,-upd):
+elif ch=='B':
+ st=int(input('Enter star ng point : ')) end=int(input('Enter ending
+point : ')) upd=int(input('Enter upda on : ')) ch2=input('Press R
+for row prin ng or Press C for column prin ng:')
+ if ch2=='R': if st>=end:
+for i in range(st,end-1,-upd):
  print(i,end=' ')
- else:
+else:
  print('Invalid input(s).')
- elif ch2=='C':
- if st>=end:
- for i in range(st,end-1,-upd):
+elif ch2=='C': if st>=end:
+for i in range(st,end-1,-upd):
  print(i)
- else:
- print('Invalid input(s).')
- else:
- print('Invalid choice')
- else:
- print('Enter either F or B.Thank you.')
+else:
+ print('Invalid
+input(s).') else:
+print('Invalid choice')
+
+else:
+ print('Enter either F or B. Thank you.')
