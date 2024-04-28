@@ -1,16 +1,13 @@
-name=input('enter student name')
-eng=float(input('enter marks of english'))
-maths=float(input('enter marks of maths'))
-physics=float(input('enter marks of physics'))
-python=float(input('enter marks of python'))
-chemistry=float(input('enter marks of Chemistry'))
-marks=(((eng+python+maths+chemistry+physics)/500)*100)
-print(marks)
-if marks>=90 and marks<=100:
-    print(name,'has got A grade')
-elif marks>=70 and marks<=89:
-    print(name,'has got B grade')
-elif marks>=40 and marks<=69:
-    print(name,'has got C grade ')
-elif marks<40:
-    print(name,'has got F grade')
+n=float(input('Enter your percentage : ')) if
+n>100 or n<0:
+ print('Invalid input from user.')
+elif n>85:
+ print('GRADE:A+')
+elif n>=65 or n<=85:
+print('GRADE:A')
+elif n>=45 or n<65:
+print('GRADE:B')
+elif n>=25 or n<45:
+print('GRADE:C')
+else:
+ print('GRADE:D')
